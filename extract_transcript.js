@@ -14,6 +14,8 @@ const intervalId = setInterval(() => {
           .map((el) => el.innerText)
           .join(' ');
 
+        console.log(textContent);
+
         // Use a temporary textarea to copy text
         const textarea = document.createElement('textarea');
         textarea.value = textContent;
